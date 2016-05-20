@@ -45,7 +45,7 @@ c = z[3];
 d = z[4];
 e = z[5];
 f = z[6];
-if((a < b || b < c || c < d || d < e || e < f) && ( a > b || b > c || c > d || d > e || e > f) && ( a != b || b != c || c != d || d != e || e != f))
+if((a >= b && b >= c && c >= d && d >= e && e >= f) || ( a <= b && b <= c && c <= d && d <= e && e <= f) || ( a == b && b == c && c == d && d == e && e == f))
 printf("1");
 else
 printf("0");
